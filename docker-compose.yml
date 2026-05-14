@@ -1,0 +1,13 @@
+services:
+
+  portfolio:
+    build: ./portfolio-app
+    ports:
+      - "8080:8080"
+    container_name: portfolio_app
+
+  java-app:
+    build: ./java-app
+    ports:
+      - "8081:8080"
+    container_name: java_app

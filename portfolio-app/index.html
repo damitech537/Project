@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Engineer</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+      line-height:1.6;
+    }
+
+    header{
+      background:#111827;
+      padding:20px 10%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+    }
+
+    header h1{
+      color:#38bdf8;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#38bdf8;
+    }
+
+    .hero{
+      height:90vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      flex-direction:column;
+      padding:20px;
+    }
+
+    .hero h2{
+      font-size:55px;
+      margin-bottom:20px;
+    }
+
+    .hero span{
+      color:#38bdf8;
+    }
+
+    .hero p{
+      max-width:700px;
+      margin-bottom:30px;
+      color:#cbd5e1;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 30px;
+      background:#38bdf8;
+      color:#000;
+      text-decoration:none;
+      border-radius:5px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:white;
+    }
+
+    section{
+      padding:80px 10%;
+    }
+
+    .section-title{
+      font-size:35px;
+      margin-bottom:40px;
+      text-align:center;
+      color:#38bdf8;
+    }
+
+    .about{
+      text-align:center;
+      max-width:900px;
+      margin:auto;
+      color:#cbd5e1;
+    }
+
+    .skills-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:20px;
+    }
+
+    .skill-card{
+      background:#1e293b;
+      padding:25px;
+      border-radius:10px;
+      text-align:center;
+      transition:0.3s;
+    }
+
+    .skill-card:hover{
+      transform:translateY(-5px);
+      background:#334155;
+    }
+
+    .projects{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .project-card{
+      background:#1e293b;
+      padding:25px;
+      border-radius:10px;
+      transition:0.3s;
+    }
+
+    .project-card:hover{
+      transform:translateY(-5px);
+    }
+
+    .project-card h3{
+      margin-bottom:15px;
+      color:#38bdf8;
+    }
+
+    .certifications ul{
+      list-style:none;
+      max-width:700px;
+      margin:auto;
+    }
+
+    .certifications li{
+      background:#1e293b;
+      margin-bottom:15px;
+      padding:20px;
+      border-radius:8px;
+    }
+
+    .contact{
+      text-align:center;
+    }
+
+    .contact p{
+      margin-bottom:10px;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#111827;
+      color:#94a3b8;
+    }
+
+    @media(max-width:768px){
+      .hero h2{
+        font-size:38px;
+      }
+
+      header{
+        flex-direction:column;
+      }
+
+      nav{
+        margin-top:10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DevOps Portfolio</h1>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hello, I'm <span>Oluwawa Damilare Oluwaseyi</span></h2>
+
+    <p>
+      DevOps Engineer specializing in CI/CD pipelines,
+      Kubernetes, Docker, AWS cloud infrastructure,
+      automation, and monitoring solutions.
+    </p>
+
+    <a href="#projects" class="btn">View Projects</a>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+      <p>
+        I am a passionate DevOps Engineer with experience
+        building scalable cloud infrastructure, automating deployments,
+        and improving software delivery pipelines using modern DevOps tools.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">Docker</div>
+      <div class="skill-card">Kubernetes</div>
+      <div class="skill-card">AWS</div>
+      <div class="skill-card">Terraform</div>
+      <div class="skill-card">Jenkins</div>
+      <div class="skill-card">GitHub Actions</div>
+      <div class="skill-card">Linux</div>
+      <div class="skill-card">Ansible</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects">
+
+      <div class="project-card">
+        <h3>Kubernetes Deployment</h3>
+        <p>
+          Automated microservices deployment using Kubernetes,
+          Helm charts, and GitHub Actions CI/CD pipeline.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>AWS Infrastructure</h3>
+        <p>
+          Built scalable AWS infrastructure using Terraform,
+          EC2, VPC, RDS, and Load Balancers.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Monitoring Stack</h3>
+        <p>
+          Implemented Prometheus and Grafana monitoring
+          system for real-time infrastructure metrics.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="certifications">
+      <ul>
+        <li>AWS Certified Solutions Architect</li>
+        <li>Certified Kubernetes Administrator (CKA)</li>
+        <li>HashiCorp Terraform Associate</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact">
+      <p>Email: damilare.oluwaseyi@gmail.com</p>
+      <p>GitHub: github.com/damitech537</p>
+      <p>LinkedIn: linkedin.com/in/oluwawa-damilare-1ba0b87a</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 DevOps Engineer</p>
+  </footer>
+
+</body>
+</html>
