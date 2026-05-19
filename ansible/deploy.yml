@@ -18,12 +18,12 @@
         owner: ubuntu
         group: ubuntu
 
-    - name: Copy portfolio app to server
+    - name: Copy portfolio-app to server
       synchronize:
         src: ../portfolio-app/
         dest: /home/ubuntu/app/portfolio-app/
 
-    - name: Copy java app to server
+    - name: Copy java-app to server
       synchronize:
         src: ../java-app/
         dest: /home/ubuntu/app/java-app/
